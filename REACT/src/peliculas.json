@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "nombrePelicula": "Aventuras en el Tiempo",
+        "portada": "https://m.media-amazon.com/images/M/MV5BZDM2M2UwNWUtMDA1NC00NjI1LWJhYWMtZDg1MmY1ZjU0YWNhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+        "sinopsis": "Un grupo de amigos descubre una máquina del tiempo en el sótano de su escuela. A medida que exploran diferentes épocas, se enfrentan a desafíos inesperados y descubren el impacto de sus acciones en el curso de la historia.",
+        "plataforma": "Netflix"
+    },
+    {
+        "id": 2,
+        "nombrePelicula": "Sueños Rotos",
+        "portada": "https://www.pelisxd.com/wp-content/uploads/2020/06/suenos-rotos-25342-poster.jpg",
+        "sinopsis": "Una mujer lucha por reconstruir su vida después de una tragedia devastadora. A través de relaciones complicadas y momentos conmovedores, busca la redención y la esperanza en medio de la adversidad.",
+        "plataforma": "Amazon Prime Video"
+    },
+    {
+        "id": 3,
+        "nombrePelicula": "Inframundo Oscuro",
+        "portada": "https://mx.web.img3.acsta.net/pictures/18/10/17/23/33/4020492.jpg",
+        "sinopsis": "En un mundo futurista donde la oscuridad es omnipresente, un grupo de rebeldes se embarca en una misión peligrosa para restaurar la luz. Se enfrentan a criaturas sobrenaturales y desafíos inimaginables en su búsqueda por un futuro más brillante.",
+        "plataforma": "Hulu"
+    },
+    {
+        "id": 4,
+        "nombrePelicula": "El Último Desafío",
+        "portada": "https://th.bing.com/th/id/OIP.X_N5dTrrufyVGiuFfWcyzgHaLG?rs=1&pid=ImgDetMain",
+        "sinopsis": "Un experto en artes marciales retirado es reclutado para un último desafío cuando un villano amenaza con desatar el caos en la ciudad. A medida que enfrenta sus propios demonios internos, debe superar obstáculos imposibles para salvar a la comunidad.",
+        "plataforma": "Disney+"
+    }
+    
+    
+    ,{
+        "id": 5,
+        "nombrePelicula": "Aventuras en el Tiempo",
+        "portada": "https://m.media-amazon.com/images/M/MV5BZDM2M2UwNWUtMDA1NC00NjI1LWJhYWMtZDg1MmY1ZjU0YWNhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+        "sinopsis": "Un grupo de amigos descubre una máquina del tiempo en el sótano de su escuela. A medida que exploran diferentes épocas, se enfrentan a desafíos inesperados y descubren el impacto de sus acciones en el curso de la historia.",
+        "plataforma": "Netflix"
+    },
+    {
+        "id": 6,
+        "nombrePelicula": "Sueños Rotos",
+        "portada": "https://www.pelisxd.com/wp-content/uploads/2020/06/suenos-rotos-25342-poster.jpg",
+        "sinopsis": "Una mujer lucha por reconstruir su vida después de una tragedia devastadora. A través de relaciones complicadas y momentos conmovedores, busca la redención y la esperanza en medio de la adversidad.",
+        "plataforma": "Amazon Prime Video"
+    },
+    {
+        "id": 7,
+        "nombrePelicula": "Inframundo Oscuro",
+        "portada": "https://mx.web.img3.acsta.net/pictures/18/10/17/23/33/4020492.jpg",
+        "sinopsis": "En un mundo futurista donde la oscuridad es omnipresente, un grupo de rebeldes se embarca en una misión peligrosa para restaurar la luz. Se enfrentan a criaturas sobrenaturales y desafíos inimaginables en su búsqueda por un futuro más brillante.",
+        "plataforma": "Hulu"
+    },
+    {
+        "id": 8,
+        "nombrePelicula": "El Último Desafío",
+        "portada": "https://th.bing.com/th/id/OIP.X_N5dTrrufyVGiuFfWcyzgHaLG?rs=1&pid=ImgDetMain",
+        "sinopsis": "Un experto en artes marciales retirado es reclutado para un último desafío cuando un villano amenaza con desatar el caos en la ciudad. A medida que enfrenta sus propios demonios internos, debe superar obstáculos imposibles para salvar a la comunidad.",
+        "plataforma": "Disney+"
+    },
+    {
+        "id": 9,
+        "nombrePelicula": "Aventuras en el Tiempo",
+        "portada": "https://m.media-amazon.com/images/M/MV5BZDM2M2UwNWUtMDA1NC00NjI1LWJhYWMtZDg1MmY1ZjU0YWNhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+        "sinopsis": "Un grupo de amigos descubre una máquina del tiempo en el sótano de su escuela. A medida que exploran diferentes épocas, se enfrentan a desafíos inesperados y descubren el impacto de sus acciones en el curso de la historia.",
+        "plataforma": "Netflix"
+    },
+    {
+        "id": 10,
+        "nombrePelicula": "Sueños Rotos",
+        "portada": "https://www.pelisxd.com/wp-content/uploads/2020/06/suenos-rotos-25342-poster.jpg",
+        "sinopsis": "Una mujer lucha por reconstruir su vida después de una tragedia devastadora. A través de relaciones complicadas y momentos conmovedores, busca la redención y la esperanza en medio de la adversidad.",
+        "plataforma": "Amazon Prime Video"
+    },
+    {
+        "id": 11,
+        "nombrePelicula": "Inframundo Oscuro",
+        "portada": "https://mx.web.img3.acsta.net/pictures/18/10/17/23/33/4020492.jpg",
+        "sinopsis": "En un mundo futurista donde la oscuridad es omnipresente, un grupo de rebeldes se embarca en una misión peligrosa para restaurar la luz. Se enfrentan a criaturas sobrenaturales y desafíos inimaginables en su búsqueda por un futuro más brillante.",
+        "plataforma": "Hulu"
+    },
+    {
+        "id": 12,
+        "nombrePelicula": "El Último Desafío",
+        "portada": "https://th.bing.com/th/id/OIP.X_N5dTrrufyVGiuFfWcyzgHaLG?rs=1&pid=ImgDetMain",
+        "sinopsis": "Un experto en artes marciales retirado es reclutado para un último desafío cuando un villano amenaza con desatar el caos en la ciudad. A medida que enfrenta sus propios demonios internos, debe superar obstáculos imposibles para salvar a la comunidad.",
+        "plataforma": "Disney+"
+    },
+    {
+        "id": 13,
+        "nombrePelicula": "Aventuras en el Tiempo",
+        "portada": "https://m.media-amazon.com/images/M/MV5BZDM2M2UwNWUtMDA1NC00NjI1LWJhYWMtZDg1MmY1ZjU0YWNhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+        "sinopsis": "Un grupo de amigos descubre una máquina del tiempo en el sótano de su escuela. A medida que exploran diferentes épocas, se enfrentan a desafíos inesperados y descubren el impacto de sus acciones en el curso de la historia.",
+        "plataforma": "Netflix"
+    },
+    {
+        "id": 14,
+        "nombrePelicula": "Sueños Rotos",
+        "portada": "https://www.pelisxd.com/wp-content/uploads/2020/06/suenos-rotos-25342-poster.jpg",
+        "sinopsis": "Una mujer lucha por reconstruir su vida después de una tragedia devastadora. A través de relaciones complicadas y momentos conmovedores, busca la redención y la esperanza en medio de la adversidad.",
+        "plataforma": "Amazon Prime Video"
+    },
+    {
+        "id": 15,
+        "nombrePelicula": "Inframundo Oscuro",
+        "portada": "https://mx.web.img3.acsta.net/pictures/18/10/17/23/33/4020492.jpg",
+        "sinopsis": "En un mundo futurista donde la oscuridad es omnipresente, un grupo de rebeldes se embarca en una misión peligrosa para restaurar la luz. Se enfrentan a criaturas sobrenaturales y desafíos inimaginables en su búsqueda por un futuro más brillante.",
+        "plataforma": "Hulu"
+    },
+    {
+        "id": 16,
+        "nombrePelicula": "El Último Desafío",
+        "portada": "https://th.bing.com/th/id/OIP.X_N5dTrrufyVGiuFfWcyzgHaLG?rs=1&pid=ImgDetMain",
+        "sinopsis": "Un experto en artes marciales retirado es reclutado para un último desafío cuando un villano amenaza con desatar el caos en la ciudad. A medida que enfrenta sus propios demonios internos, debe superar obstáculos imposibles para salvar a la comunidad.",
+        "plataforma": "Disney+"
+    },
+    {
+        "id": 17,
+        "nombrePelicula": "Aventuras en el Tiempo",
+        "portada": "https://m.media-amazon.com/images/M/MV5BZDM2M2UwNWUtMDA1NC00NjI1LWJhYWMtZDg1MmY1ZjU0YWNhXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_QL75_UX190_CR0,2,190,281_.jpg",
+        "sinopsis": "Un grupo de amigos descubre una máquina del tiempo en el sótano de su escuela. A medida que exploran diferentes épocas, se enfrentan a desafíos inesperados y descubren el impacto de sus acciones en el curso de la historia.",
+        "plataforma": "Netflix"
+    }
+]

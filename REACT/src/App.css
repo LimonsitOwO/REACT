@@ -1,0 +1,14 @@
+:root{
+  --background-primary: #231942;
+  --font-primary: #5E548E;
+  --background-secundary: #9F86C0;
+  --font-secundary: #BE95C4;
+  --font-light: #E0B1CB;
+  --font-opacity: #505050;
+  --opacity: #000000c0;
+  --opacity-border: #a0a0a0;
+}
+
+.App {
+  font-family: "Ubuntu", sans-serif;
+}

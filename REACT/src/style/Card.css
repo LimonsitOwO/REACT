@@ -1,0 +1,71 @@
+.cont .cardp{
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+    width: 180px;
+    position: relative;
+}
+.cont .cardp .cardp-cont{
+    text-decoration: none;
+    color: black;
+}
+.cont .cardp .cardp-img{
+    position: relative;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 1px 1px 1rem var(--opacity);
+    cursor: pointer;
+}
+.cont .cardp .cardp-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-primary);
+    border-radius: 2rem;
+    border: none;
+}
+.edit{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+}
+.delete{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.cont .cardp .cardp-img .add{
+    height: 270px;
+    box-shadow: inset 1px 1px 1rem var(--opacity);
+}
+.cont .cardp .cardp-img img{
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    width: 180px;
+    height: 270px;
+}
+.cont .cardp .cardp-tittle{
+    margin-top: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.cont .cardp:active{
+    transform: scale(1.02);
+    transition: all 0.1s; 
+}
+.cont .cardp .cardp-cont:hover{
+    color: var(--font-secundary);
+    transform: scale(1.02);
+    transition: all 0.1s; 
+    text-shadow: 1px 1px 1rem var(--opacity);
+}
+.cont .cardp .cardp-img .cardp-btn:hover{
+    background-color: var(--font-primary);
+}
+button:active{
+    opacity: 0.5;
+}
