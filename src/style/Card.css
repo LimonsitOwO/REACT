@@ -69,3 +69,38 @@
 button:active{
     opacity: 0.5;
 }
+
+.searchbar{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchbar input{
+    width: 50%;
+    border-radius: 2rem 0  0 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--opacity-border);
+    border-right: none;
+    color: var(--font-opacity);
+    transition: transform 2s;
+  }
+  .searchbar .icon{
+    width: 1rem;
+    padding: 0.5rem 2rem 0.5rem 0;
+    border-radius: 0 2rem 2rem 0;
+    border: 1px solid var(--opacity-border);
+    border-left: none;
+  }
+  @media screen and (max-width: 576px) {
+      .searchbar{
+          margin: 0 0.5rem 2rem 0.5rem;
+          width: 100%
+      }
+      .searchbar input{
+          width: 80%;
+      }
+  }
+  .searchbar input:focus {
+    outline: none;
+  }

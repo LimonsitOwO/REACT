@@ -4,13 +4,12 @@ import { Nav } from './components/Nav.jsx';
 import { Card } from './components/Card.jsx';
 import { CreateCard } from './components/Create.jsx';
 import { EditCard } from './components/Edit.jsx';
-import { SearchBar } from './components/SearchBar.jsx';
 import { InfoPage } from './components/Info.jsx';
+import { FaSearch } from "react-icons/fa";
 
 const Home = () => {
   return( 
     <div>
-      <SearchBar />
       <Card />
     </div>
   ) 
