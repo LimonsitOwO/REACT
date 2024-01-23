@@ -2,7 +2,8 @@ import '../style/Info.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 const URI = 'http://localhost:8000/peliculas/'
 
@@ -29,6 +30,11 @@ const InfoPage = () => {
         <div className='container-fluid main'>
             <Container className='cont'>
               <Row className='justify-content-center info'>
+                <Link to={`/`}>
+                    <div className='button'>
+                        <IoMdArrowRoundBack style={{ fill: 'var(--font-light)'}}/>
+                    </div>
+                </Link>
                 <Col xs={12} md={6} lg={9} className='info-paragraph'>
                     <h1 className='info-tittle'>
                         {nombrep}

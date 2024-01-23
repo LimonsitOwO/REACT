@@ -7,7 +7,7 @@ header{
 }
 header .tittle-primary{
   font-weight: 700;
-  margin-left: 1rem;
+  margin: 1rem 0 1rem 2rem;
   display: flex;
   align-items: center;
 }

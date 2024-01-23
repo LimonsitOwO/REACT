@@ -1,3 +1,6 @@
+.cont{
+    position: relative;
+}
 .main .form-tittle{
     text-align: center;
     font-weight: 700;
@@ -27,4 +30,16 @@
 }
 .main .cont-btn .submit:active{
     opacity: 0.5;
+}
+.button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--background-primary);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

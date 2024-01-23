@@ -11,4 +11,20 @@
 
 .App {
   font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body{
+  flex: 1;
+  margin-bottom: 2rem;
+}
+.primary-footer{
+  background-color: var(--background-primary);
+  width: 100%;
+  padding: 0 0 0.5rem 0; 
+  text-align: center;
+  margin: auto 0 0 0;
+  color: var(--font-light);
+  font-weight: 700;
 }

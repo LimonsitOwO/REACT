@@ -6,10 +6,10 @@ function Nav() {
   return (
     <header className='container-fluid justify-content-between'>
         <div className='tittle-navbar'>
-            <h2 className='tittle-primary'>
-                <BiSolidCameraMovie size={40} className='me-2'/>
-                PELICULA
-            </h2>
+            <h1 className='tittle-primary'>
+                <BiSolidCameraMovie size={50} className='me-3'/>
+                LibrePelis
+            </h1>
         </div>
     </header>
   );

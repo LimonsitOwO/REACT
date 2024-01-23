@@ -1,0 +1,7 @@
+.footer{
+    color: var(--font-light);
+    padding: 3rem 0;
+}
+.footer .icon{
+    cursor: pointer;
+}

@@ -5,7 +5,7 @@ import { Card } from './components/Card.jsx';
 import { CreateCard } from './components/Create.jsx';
 import { EditCard } from './components/Edit.jsx';
 import { InfoPage } from './components/Info.jsx';
-import { FaSearch } from "react-icons/fa";
+import { Footer } from './components/Footer.jsx';
 
 const Home = () => {
   return( 
@@ -43,12 +43,20 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Create' element={<Create />} />
-        <Route path='/edit/:id' element={<Edit />} />
-        <Route path='/info/:id' element={<Info />} />
-      </Routes>
+      <div className='body'>
+        <Routes >
+          <Route path='/' element={<Home />} />
+          <Route path='/Create' element={<Create />} />
+          <Route path='/edit/:id' element={<Edit />} />
+          <Route path='/info/:id' element={<Info />} />
+        </Routes>
+      </div>
+      <div className='primary-footer'>
+        <Footer />
+        <h5>
+          Limonsito
+        </h5>
+      </div>
     </div>
   );
 }
