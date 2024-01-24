@@ -73,23 +73,23 @@ const CreateCard = () => {
                             className='form-control'/>
                         </div>
                         <div className='mb-3 form-create'>
-                            <label className='form-label'>Agregue un genero de la pelicula</label>
+                            <label className='form-label'>Genero de la pelicula</label>
                             <input value={generouno} 
-                            onChange={ (e) => setNombrep(e.target.value)} 
+                            onChange={ (e) => setGenerouno(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>
                         <div className='mb-3 form-create'>
-                            <label className='form-label'>Agregue otro genero de la pelicula</label>
+                            <label className='form-label'>Otro genero de la pelicula</label>
                             <input value={generodos} 
-                            onChange={ (e) => setSinopsis(e.target.value)} 
+                            onChange={ (e) => setGenerodos(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>
                         <div className='mb-3 form-create'>
-                            <label className='form-label'>Agregue otro genero de la pelicula</label>
+                            <label className='form-label'>Otro genero de la pelicula</label>
                             <input value={generotres} 
-                            onChange={ (e) => setPlataforma(e.target.value)} 
+                            onChange={ (e) => setGenerotres(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>

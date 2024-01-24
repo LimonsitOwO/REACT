@@ -40,6 +40,9 @@ const EditCard = () => {
         setNombrep(res.data.nombrep)
         setSinopsis(res.data.sinopsis)
         setPlataforma(res.data.plataforma)
+        setGenerouno(res.data.generouno)
+        setGenerodos(res.data.generodos)
+        setGenerotres(res.data.generotres)
     }
 
     return (
@@ -87,21 +90,21 @@ const EditCard = () => {
                         <div className='mb-3 form-create'>
                             <label className='form-label'>Genero de la pelicula</label>
                             <input value={generouno} 
-                            onChange={ (e) => setNombrep(e.target.value)} 
+                            onChange={ (e) => setGenerouno(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>
                         <div className='mb-3 form-create'>
                             <label className='form-label'>Otro genero de la pelicula</label>
                             <input value={generodos} 
-                            onChange={ (e) => setSinopsis(e.target.value)} 
+                            onChange={ (e) => setGenerodos(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>
                         <div className='mb-3 form-create'>
                             <label className='form-label'>Otro genero de la pelicula</label>
                             <input value={generotres} 
-                            onChange={ (e) => setPlataforma(e.target.value)} 
+                            onChange={ (e) => setGenerotres(e.target.value)} 
                             type="text" 
                             className='form-control'/>
                         </div>
