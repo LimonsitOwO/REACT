@@ -27,11 +27,17 @@ const Card = () => {
         getPeliculas()
     }
 
+    const textChange = (str) => {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    };
+
     const searcher = (e) => {
         setSearch(e.target.value)
     }
     
-    const quest = !search ? peliculas : peliculas.filter((srch) => srch.nombrep.toLowerCase().includes(search.toLowerCase()));
+    const quest = !search ? peliculas : peliculas.filter((srch) => textChange(srch.nombrep.toLowerCase()).includes(textChange(search.toLowerCase())
+                  )
+          );
     
     return (
         <div className='container-fluid main'>

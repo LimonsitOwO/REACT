@@ -11,17 +11,17 @@ function Footer() {
     <Container className='footer'>
         <Row>
             <Col xs={3} md={3} lg={3} >
-                <Link to="https://github.com/LimonsitOwO">
+                <Link to="https://github.com/LimonsitOwO" target="_blank" rel="noopener noreferrer">
                     <IoLogoGithub className='icon' size={50} style={{ fill: 'var(--font-light)'}}/>
                 </Link>
             </Col>
             <Col xs={3} md={3} lg={3}>
-                <Link to="https://www.linkedin.com/in/luis-carlos-ballen-913138299/">
+                <Link to="https://www.linkedin.com/in/luis-carlos-ballen-913138299/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className='icon' size={50} style={{ fill: 'var(--font-light)'}}/>
                 </Link>
             </Col>
             <Col xs={3} md={3} lg={3}>
-                <Link to={"mailto:luislm080304@gmail.com"}>
+                <Link to={"mailto:luislm080304@gmail.com"} target="_blank" rel="noopener noreferrer">
                     <BiLogoGmail className='icon' size={50} style={{ fill: 'var(--font-light)'}}/>
                 </Link>
             </Col>
