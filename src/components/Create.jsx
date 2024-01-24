@@ -12,6 +12,9 @@ const CreateCard = () => {
     const [nombrep, setNombrep] = useState('')
     const [sinopsis, setSinopsis] = useState('')
     const [plataforma, setPlataforma] = useState('')
+    const [generouno, setGenerouno] = useState('')
+    const [generodos, setGenerodos] = useState('')
+    const [generotres, setGenerotres] = useState('')
     const navigate = useNavigate()
 
     const create = async (e) => {
@@ -19,7 +22,11 @@ const CreateCard = () => {
         await axios.post(URI, {url: url,
                                nombrep: nombrep,
                                sinopsis: sinopsis,
-                               plataforma: plataforma})
+                               plataforma: plataforma,
+                               generouno: generouno,
+                               generodos: generodos,
+                               generotres: generotres
+                            })
         navigate('/')
     }
 
@@ -61,6 +68,27 @@ const CreateCard = () => {
                         <div className='mb-3 form-create'>
                             <label className='form-label'>Plataforma en la que se puede visualizar</label>
                             <input value={plataforma} 
+                            onChange={ (e) => setPlataforma(e.target.value)} 
+                            type="text" 
+                            className='form-control'/>
+                        </div>
+                        <div className='mb-3 form-create'>
+                            <label className='form-label'>Agregue un genero de la pelicula</label>
+                            <input value={generouno} 
+                            onChange={ (e) => setNombrep(e.target.value)} 
+                            type="text" 
+                            className='form-control'/>
+                        </div>
+                        <div className='mb-3 form-create'>
+                            <label className='form-label'>Agregue otro genero de la pelicula</label>
+                            <input value={generodos} 
+                            onChange={ (e) => setSinopsis(e.target.value)} 
+                            type="text" 
+                            className='form-control'/>
+                        </div>
+                        <div className='mb-3 form-create'>
+                            <label className='form-label'>Agregue otro genero de la pelicula</label>
+                            <input value={generotres} 
                             onChange={ (e) => setPlataforma(e.target.value)} 
                             type="text" 
                             className='form-control'/>
