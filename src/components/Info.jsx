@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useParams, Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-const URI = 'http://localhost:8000/peliculas/';
+const URI = 'https://vd-node.vercel.app/peliculas/';
 
 const InfoPage = () => {
     const { id } = useParams();

@@ -8,7 +8,7 @@ import { MdEdit } from "react-icons/md";
 import { FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const URI = 'http://localhost:8000/peliculas/'
+const URI = 'https://vd-node.vercel.app/peliculas/'
 
 const Card = () => {
     const [peliculas, setPelicula] = useState([])
@@ -30,8 +30,6 @@ const Card = () => {
       )];
       setAllGeneros(uniqueGeneros);
   }, [peliculas]);
-  
-    
 
     const getPeliculas = async () => {
         const res = await axios.get(URI)
@@ -56,7 +54,6 @@ const Card = () => {
         if (prevGeneros.includes(e.target.value)) {
           return prevGeneros.filter((selectedGenero) => selectedGenero !== e.target.value);
         } else {
-          console.log("Selected Generos:", e.target.value);
           return [...prevGeneros, e.target.value];
         }
       });

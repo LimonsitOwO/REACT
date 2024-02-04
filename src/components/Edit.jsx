@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-const URI = 'http://localhost:8000/peliculas/'
+const URI = 'https://vd-node.vercel.app/peliculas/'
 
 const EditCard = () => {
     const [url, setUrl] = useState('')

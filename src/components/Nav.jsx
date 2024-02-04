@@ -1,5 +1,4 @@
 import '../style/Nav.css';
-import { FaSearch } from "react-icons/fa";
 import { BiSolidCameraMovie } from "react-icons/bi";
 
 function Nav() {

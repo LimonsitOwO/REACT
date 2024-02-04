@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-const URI = 'http://localhost:8000/peliculas/'
+const URI = 'https://vd-node.vercel.app/peliculas/'
 
 const CreateCard = () => {
     const [url, setUrl] = useState('')
@@ -19,15 +19,16 @@ const CreateCard = () => {
 
     const create = async (e) => {
         e.preventDefault()
-        await axios.post(URI, {url: url,
-                               nombrep: nombrep,
-                               sinopsis: sinopsis,
-                               plataforma: plataforma,
-                               generouno: generouno,
-                               generodos: generodos,
-                               generotres: generotres
-                            })
-        navigate('/')
+        await axios.post(URI, {
+            url: url,
+            nombrep: nombrep,
+            sinopsis: sinopsis,
+            plataforma: plataforma,
+            generouno: generouno,
+            generodos: generodos,
+            generotres: generotres
+        });
+        navigate('/');
     }
 
     return (
