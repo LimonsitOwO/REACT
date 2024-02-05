@@ -5,10 +5,32 @@ header{
   color: var(--font-light);
   box-shadow: 0 2px 10px var(--opacity);
 }
-header .tittle-primary{
-  font-weight: 700;
-  margin: 1rem 0 1rem 2rem;
+header .tittle-navbar{
+  padding: 1rem 0 0.5rem 2rem;
   display: flex;
   align-items: center;
 }
-
+header .tittle-navbar img{
+  height: 3rem;
+  margin-right: 1rem;
+}
+header .tittle-navbar .tittle-primary{
+  font-weight: 700;
+  padding: auto 0;
+}
+@media screen and (max-width: 576px) {
+  header .tittle-navbar{
+    padding: 1rem 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .tittle-navbar img{
+    height: 2.8rem;
+    margin-right: 0.5rem;
+  }
+  header .tittle-navbar .tittle-primary{
+    font-weight: 700;
+    padding: auto 0;
+  }
+}

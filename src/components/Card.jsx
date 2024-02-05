@@ -70,10 +70,10 @@ const Card = () => {
         <div className='container-fluid main'>
             <div className='container-fluid main-filter'>
                 <div className='searchbar'>
-                  <input type="text" placeholder='Buscar' value={search} onChange={searcher} />
-                  <div className='icon'>
-                      <FaSearch style={{ fill: 'var(--opacity-border)' }}/>
-                  </div>
+                  <input type="text" placeholder='Buscar' id='search' value={search} onChange={searcher} />
+                  <label className='icon' for='search'>
+                      <FaSearch style={{ fill: 'var(--font-primary)' }}/>
+                  </label>
                 </div>
                 <div className='filter '>
                   {allGeneros
@@ -102,13 +102,11 @@ const Card = () => {
                               {pelicula.nombrep}
                             </h5>
                         </Link>
-                        <Link to={`/edit/${pelicula.id}`} className='cardp-cont'>
-                            <button className='cardp-btn edit'>
-                                <MdEdit style={{ fill:'var(--font-light)' }} />
-                            </button>
+                        <Link to={`/edit/${pelicula.id}`} className='cardp-btn edit'>
+                            <MdEdit />
                         </Link>
                         <button onClick={ () => deletePelicula(pelicula.id) } className='cardp-btn delete'>
-                            <MdDelete style={{ fill:'var(--font-light)' }} />
+                            <MdDelete />
                         </button>
                     </div>
                 ))}

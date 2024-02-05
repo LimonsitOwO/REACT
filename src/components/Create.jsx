@@ -26,21 +26,19 @@ const CreateCard = () => {
             plataforma: plataforma,
             generouno: generouno,
             generodos: generodos,
-            generotres: generotres
-        });
-        navigate('/');
+            generotres: generotres,
+        })
+        navigate('/')
     }
 
     return (
         <div className='container-fluid main'>
             <Container className='cont'>
               <Row className='justify-content-center'>
-                <Link to={`/`}>
-                    <div className='button'>
-                        <IoMdArrowRoundBack style={{ fill: 'var(--font-light)'}}/>
-                    </div>
-                </Link>
                 <Col>
+                    <Link to={`/`} className='back'>
+                        <IoMdArrowRoundBack />
+                    </Link>
                     <h3 className='form-tittle'>
                         CREAR INFORMACION DE LA PELICULA
                     </h3>

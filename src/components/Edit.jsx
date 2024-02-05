@@ -49,12 +49,10 @@ const EditCard = () => {
         <div className='container-fluid main'>
             <Container className='cont'>
               <Row className='justify-content-center'>
-                <Link to={`/`}>
-                    <div className='button'>
-                        <IoMdArrowRoundBack style={{ fill: 'var(--font-light)'}}/>
-                    </div>
-                </Link>
                 <Col>
+                    <Link to={`/`} className='back'>
+                        <IoMdArrowRoundBack />
+                    </Link>
                     <h3 className='form-tittle'>
                         EDITAR LA INFORMACION DE LA PELICULA
                     </h3>

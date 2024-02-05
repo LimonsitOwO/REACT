@@ -34,12 +34,10 @@ const InfoPage = () => {
         <div className='container-fluid main'>
             <Container className='cont'>
                 <Row className='justify-content-center info'>
-                    <Link to={`/`}>
-                        <div className='button'>
-                            <IoMdArrowRoundBack style={{ fill: 'var(--font-light)'}}/>
-                        </div>
-                    </Link>
                     <Col xs={12} md={6} lg={9} className='info-paragraph'>
+                        <Link to={`/`} className='back'>
+                            <IoMdArrowRoundBack />
+                        </Link>
                         <h1 className='info-tittle'>
                             {nombrep}
                         </h1>

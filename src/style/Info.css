@@ -17,15 +17,20 @@
     border-radius: 1rem;
     box-shadow: 1px 1px 1rem var(--opacity);
 }
-.button{
+.back{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--font-light);
     position: absolute;
     top: 0;
     left: 0;
     background-color: var(--background-primary);
-    width: 2.5rem;
-    height: 2.5rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.back:active{
+    color: var(--background-primary);
+    background-color: var(--font-light);
 }

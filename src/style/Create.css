@@ -21,15 +21,16 @@
     background-color: var(--background-primary);
     border-radius: 10px;
     border: none;
-    font-weight: 500;
-    box-shadow: 1px 1px 5px var(--opacity);
+    font-weight: 700;
+    box-shadow: 1px 1px 2px var(--opacity);
 }
 .main .form-control:focus {
     box-shadow: none;
     border: var(--bs-border-width) solid var(--bs-border-color);
 }
 .main .cont-btn .submit:active{
-    opacity: 0.5;
+    background-color: var(--font-light);
+    color: var(--background-primary);
 }
 .button{
     position: absolute;
