@@ -51,7 +51,7 @@ function App() {
           <Route path='/info/:id' element={<Info />} />
         </Routes>
       </div>
-      <div className='primary-footer'>
+      <div className='footer'>
         <Footer />
         <h5>
           Limonsito

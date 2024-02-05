@@ -29,7 +29,7 @@ const Card = () => {
           ]).filter(genero => genero !== null && genero !== ' ')
       )];
       setAllGeneros(uniqueGeneros);
-  }, [peliculas]);
+    }, [peliculas]);
 
     const getPeliculas = async () => {
         const res = await axios.get(URI)
@@ -64,65 +64,64 @@ const Card = () => {
     const filterMovie = peliculas.filter((srch) => (
       (!search || textChange(srch.nombrep.toLowerCase()).includes(textChange(search.toLowerCase())))
       && (selectedGeneros.length === 0 || selectedGeneros.some(genero => srch.generouno === genero || srch.generodos === genero || srch.generotres === genero))
-  ));
+    ));
 
     return (
-        <div className='container-fluid main'>
-            <div className='container-fluid main-filter'>
-                <div className='searchbar'>
-                  <input type="text" placeholder='Buscar' id='search' value={search} onChange={searcher} />
-                  <label className='icon' for='search'>
-                      <FaSearch style={{ fill: 'var(--font-primary)' }}/>
-                  </label>
-                </div>
-                <div className='filter '>
-                  {allGeneros
-                  .filter((genero) => genero.trim() !== '') 
-                  .map((genero) => (
-                    <div className='check' key={genero}>
-                      <div className='chack-cont'>
-                        <label htmlFor={`${genero}`} className={`checkbox-label ${selectedGeneros.includes(genero) ? 'active' : ''}`}>
-                          <input className='me-2 checkbox-hidden' id={`${genero}`} type="checkbox" value={`${genero}`} onChange={toggleGenero} />
-                          {genero.toUpperCase()}
-                        </label>   
-                      </div>          
-                    </div>
-                  ))}
-                </div>
-            </div>
-            <Container className='cont'>
-              <Row className='justify-content-center'>
-                {filterMovie.map( (pelicula) => (
-                    <div xs={6} md={3} lg={2} className='cardp' key={pelicula.id}>
-                        <Link to={`/info/${pelicula.id}`} className='cardp-cont'  >
-                            <div className='cardp-img'>
-                                <img src={pelicula.url} alt="" />
-                            </div>
-                            <h5 className='cardp-tittle'>
-                              {pelicula.nombrep}
-                            </h5>
-                        </Link>
-                        <Link to={`/edit/${pelicula.id}`} className='cardp-btn edit'>
-                            <MdEdit />
-                        </Link>
-                        <button onClick={ () => deletePelicula(pelicula.id) } className='cardp-btn delete'>
-                            <MdDelete />
-                        </button>
-                    </div>
+      <div className='container-fluid main'>
+          <div className='container-fluid main-filter'>
+              <div className='searchbar'>
+                <input type="text" placeholder='Buscar' id='search' value={search} onChange={searcher} />
+                <label className='icon' for='search'>
+                    <FaSearch style={{ fill: 'var(--font-primary)' }}/>
+                </label>
+              </div>
+              <div className='filter'>
+                {allGeneros
+                .filter((genero) => genero.trim() !== '') 
+                .map((genero) => (
+                  <div className='check' key={genero}>
+                    <label htmlFor={`${genero}`} className={`checkbox-label ${selectedGeneros.includes(genero) ? 'active' : ''}`}>
+                      <input className='me-2 checkbox-hidden' id={`${genero}`} type="checkbox" value={`${genero}`} onChange={toggleGenero} />
+                      {genero.toUpperCase()}
+                    </label>           
+                  </div>
                 ))}
-                <div className='cardp'>
-                    <Link to={'/Create'} className='cardp-cont' xs={6} md={3} lg={2}>
-                        <div className='cardp-img add' style={{ height: '270px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <IoIosAdd size={100} />
-                        </div>
-                        <h5 className='cardp-tittle'>
-                            Crear
-                        </h5>
-                    </Link>
+              </div>
+          </div>
+          
+          <Container className='cont'>
+            <Row className='justify-content-center'>
+              {filterMovie.map( (pelicula) => (
+                <div xs={6} md={3} lg={2} className='cardp' key={pelicula.id}>
+                  <Link to={`/info/${pelicula.id}`} className='cardp-cont'  >
+                    <div className='cardp-img'>
+                        <img src={pelicula.url} alt="" />
+                    </div>
+                    <h5 className='cardp-tittle'>
+                      {pelicula.nombrep}
+                    </h5>
+                  </Link>
+                  <Link to={`/edit/${pelicula.id}`} className='cardp-btn edit'>
+                    <MdEdit />
+                  </Link>
+                  <button onClick={ () => deletePelicula(pelicula.id) } className='cardp-btn delete'>
+                    <MdDelete />
+                  </button>
                 </div>
-              </Row>
-            </Container>
-        </div>
+              ))}
+              <div className='cardp'>
+                <Link to={'/Create'} className='cardp-cont' xs={6} md={3} lg={2}>
+                  <div className='cardp-img add' style={{ height: '270px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <IoIosAdd size={100} />
+                  </div>
+                  <h5 className='cardp-tittle'>
+                    Crear
+                  </h5>
+                </Link>
+              </div>
+            </Row>
+          </Container>
+      </div>
     );  
 }
 

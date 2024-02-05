@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <Container className='footer'>
+    <Container className='cont-footer'>
         <Row>
             <Col xs={3} md={3} lg={3} >
                 <Link to="https://github.com/LimonsitOwO" target="_blank" rel="noopener noreferrer">

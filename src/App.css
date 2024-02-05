@@ -9,17 +9,17 @@
   --opacity-border: #a0a0a0;
 }
 
-.App {
+.App{
   font-family: "Ubuntu", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.body{
+.App .body{
   flex: 1;
   margin-bottom: 2rem;
 }
-.primary-footer{
+.App .footer{
   background-color: var(--background-primary);
   width: 100%;
   padding: 0 0 0.5rem 0; 

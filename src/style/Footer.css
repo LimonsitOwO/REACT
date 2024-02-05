@@ -1,7 +1,12 @@
-.footer{
+.cont-footer{
     color: var(--font-light);
     padding: 3rem 0;
 }
-.footer .icon{
+.cont-footer .icon{
     cursor: pointer;
+}
+.cont-footer .icon:hover{
+    transform: scale(1.1);
+    transition: all 0.5s; 
+    filter: drop-shadow(0 0 10px var(--opacity));
 }
