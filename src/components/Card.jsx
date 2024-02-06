@@ -110,7 +110,7 @@ const Card = () => {
                   </button>
                 </div>
               ))}
-              <div className='cardp'>
+              <div className='cardp card-add'>
                 <Link to={'/Create'} className='cardp-cont' xs={6} md={3} lg={2}>
                   <div className='cardp-img add' style={{ height: '270px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <IoIosAdd size={100} />
