@@ -88,18 +88,19 @@ const Card = () => {
                 ))}
               </div>
           </div>
-          
           <Container className='cont'>
             <Row className='justify-content-center'>
               {filterMovie.map( (pelicula) => (
                 <div xs={6} md={3} lg={2} className='cardp' key={pelicula.id}>
-                  <Link to={`/info/${pelicula.id}`} className='cardp-cont'  >
-                    <div className='cardp-img'>
-                        <img src={pelicula.url} alt="" />
+                  <Link to={`/info/${pelicula.id}`} className='cardp-cont'>
+                    <div className='cardp-cont'>
+                      <div className='cardp-img'>
+                          <img src={pelicula.url} alt="" />
+                      </div>
+                      <h5 className='cardp-tittle'>
+                        {pelicula.nombrep}
+                      </h5>
                     </div>
-                    <h5 className='cardp-tittle'>
-                      {pelicula.nombrep}
-                    </h5>
                   </Link>
                   <Link to={`/edit/${pelicula.id}`} className='cardp-btn edit'>
                     <MdEdit />

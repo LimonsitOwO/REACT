@@ -148,17 +148,17 @@
     height: 270px;
     box-shadow: inset 1px 1px 1rem var(--opacity);
 }
-.main .cont .cardp:active{
-    transform: scale(1.02);
-    transition: all 0.1s; 
-}
 .main .cont .cardp .cardp-cont:hover{
     color: var(--font-secundary);
-    transform: scale(1.02);
-    transition: all 0.1s; 
     text-shadow: 1px 1px 1rem var(--opacity);
+}
+.main .cont .cardp .cardp-cont:active {
+    transform: scale(1.02);
+    transition: all 0.1s;
 }
 .main .cont .cardp .cardp-btn:active{
     background-color: var(--font-light);
     color: var(--background-primary);
+    transform: scale(1.05);
+    transition: all 0.1s;
 }
