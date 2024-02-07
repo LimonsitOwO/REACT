@@ -122,7 +122,14 @@
     background-color: var(--background-primary);
     border-radius: 2rem;
     border: none;
-    transition: all 0.1s;
+}
+.main .cont .cardp .cardp-btn.hidden{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .main .cont .cardp .cardp-btn.hidden{
+        display: flex;
+    }
 }
 .main .cont .cardp .edit{
     position: absolute;

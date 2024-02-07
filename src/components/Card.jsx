@@ -108,10 +108,10 @@ const Card = () => {
                       </h5>
                     </div>
                   </Link>
-                  <Link to={`/edit/${pelicula.id}`} className={`cardp-btn edit ${showBtn === pelicula.id ? '' : 'd-none'}`} >
+                  <Link to={`/edit/${pelicula.id}`} className={`cardp-btn edit ${showBtn === pelicula.id ? '' : 'hidden'}`} >
                     <MdEdit />
                   </Link>
-                  <button onClick={() => deletePelicula(pelicula.id)} className={`cardp-btn delete ${showBtn === pelicula.id ? '' : 'd-none'}`}>
+                  <button onClick={() => deletePelicula(pelicula.id)} className={`cardp-btn delete ${showBtn === pelicula.id ? '' : 'hidden'}`}>
                     <MdDelete />
                   </button>
                 </div>
