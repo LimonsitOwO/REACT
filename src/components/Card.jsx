@@ -15,6 +15,7 @@ const Card = () => {
     const [search, setSearch] = useState("")
     const [selectedGeneros, setSelectedGeneros] = useState([])
     const [allGeneros, setAllGeneros] = useState([])
+    const [showBtn, setShowBtn] = useState(null)
 
     useEffect(() => {
         getPeliculas();
@@ -47,6 +48,14 @@ const Card = () => {
     const searcher = (e) => {
       setSearch(e.target.value);
     };
+
+    const handleMouseOver = (id) => {
+      setShowBtn(id);
+    }
+    
+    const handleMouseOut = () => {
+      setShowBtn(null);
+    }
     
     const toggleGenero = (e) => {
       setSelectedGeneros((prevGeneros) => {
@@ -58,8 +67,6 @@ const Card = () => {
       });
     };
     
-    
-
     const filterMovie = peliculas.filter((srch) => (
       (!search || textChange(srch.nombrep.toLowerCase()).includes(textChange(search.toLowerCase())))
       && (selectedGeneros.length === 0 || selectedGeneros.some(genero => srch.generouno === genero || srch.generodos === genero || srch.generotres === genero))
@@ -90,7 +97,7 @@ const Card = () => {
           <Container className='cont'>
             <Row className='justify-content-center'>
               {filterMovie.map( (pelicula) => (
-                <div xs={6} md={3} lg={2} className='cardp' key={pelicula.id}>
+                <div xs={6} md={3} lg={2} className='cardp' key={pelicula.id} onMouseOver={() => handleMouseOver(pelicula.id)} onMouseOut={handleMouseOut}>
                   <Link to={`/info/${pelicula.id}`} className='cardp-cont'>
                     <div className='cardp-cont'>
                       <div className='cardp-img'>
@@ -101,10 +108,10 @@ const Card = () => {
                       </h5>
                     </div>
                   </Link>
-                  <Link to={`/edit/${pelicula.id}`} className='cardp-btn edit'>
+                  <Link to={`/edit/${pelicula.id}`} className={`cardp-btn edit ${showBtn === pelicula.id ? '' : 'd-none'}`} >
                     <MdEdit />
                   </Link>
-                  <button onClick={ () => deletePelicula(pelicula.id) } className='cardp-btn delete'>
+                  <button onClick={() => deletePelicula(pelicula.id)} className={`cardp-btn delete ${showBtn === pelicula.id ? '' : 'd-none'}`}>
                     <MdDelete />
                   </button>
                 </div>
