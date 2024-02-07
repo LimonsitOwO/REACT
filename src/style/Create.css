@@ -33,3 +33,22 @@
     background-color: var(--font-light);
     color: var(--background-primary);
 }
+/*Dark Mode*/
+.dark .main .cont .form-tittle{
+    color: var(--font-light);
+}
+.dark .main .cont .cont-btn .submit{
+    background-color: var(--background-primary-dark);
+}
+.dark .main .cont .form-create .form-control{
+    background-color: var(--background-dark);
+    border: 1px solid var(--border-dark);
+    color: var(--background-light);
+}
+.dark .main .cont .form-create .form-control:focus {
+    border: 1px solid var(--font-light);
+}
+.dark .main .cont .cont-btn .submit:active{
+    background-color: var(--font-light);
+    color: var(--background-primary);
+}

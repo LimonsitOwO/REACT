@@ -1,6 +1,7 @@
 import '../style/Nav.css';
+import { MdOutlineDarkMode } from "react-icons/md";
 
-function Nav() {
+function Nav({ toggleDarkMode }) {
   return (
     <header className='container-fluid justify-content-between'>
         <div className='tittle-navbar'>
@@ -9,6 +10,10 @@ function Nav() {
                 LibrePelis
             </h1>
         </div>
+        <label htmlFor="colormode" className="colormode">
+          <input className='d-none' id="colormode" type="checkbox" value="active" onChange={toggleDarkMode}/>
+          <MdOutlineDarkMode size={20}/>
+        </label>   
     </header>
   );
 }

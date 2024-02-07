@@ -18,29 +18,31 @@
     align-items: center;
 }
 .main .main-filter .searchbar input{
+    background-color: var(--background-light);
     width: 50%;
     border-radius: 2rem 0  0 2rem;
     padding: 0.5rem 1rem;
     border: 1px solid var(--opacity-border);
     border-right: none;
-    color: var(--font-opacity);
-    transition: transform 2s, border-color 0.5s; 
+    transition: all 0.1s;
 }
 .main .main-filter .searchbar .icon{
+    background-color: var(--background-light);
     width: 1rem;
+    color: var(--opacity-border);
     padding: 0.5rem 2rem 0.5rem 0;
     border-radius: 0 2rem 2rem 0;
     border: 1px solid var(--opacity-border);
     border-left: none;
-    transition: transform 2s, border-color 0.5s; 
+    transition: all 0.1s;
 }
 .main .main-filter .searchbar input:focus {
-    border: 2px solid var(--font-primary);
+    border: 2px solid var(--background-primary);
     border-right: none;
     outline: none;
 }
 .main .main-filter .searchbar input:focus + .icon {
-    border: 2px solid var(--font-primary);
+    color: var(--background-primary);
     border-left: none;
     outline: none;
 }
@@ -90,6 +92,7 @@
 .main .main-filter .filter .check .checkbox-label.active{
     background-color: var(--font-light);
     color: var(--background-primary);
+    transition: all 0.1s;
 }
 .main .cont .cardp{
     margin: 0 1rem 1rem 1rem;
@@ -99,22 +102,22 @@
 }
 .main .cont .cardp .cardp-cont{
     text-decoration: none;
-    color: black;
+    color: var(--background-dark);
 }
 .main .cont .cardp .cardp-cont .cardp-img{
     position: relative;
     border: none;
     border-radius: 1rem;
     text-align: center;
-    box-shadow: 1px 1px 1rem var(--opacity);
+    box-shadow: 0 0 0.5rem var(--opacity);
     cursor: pointer;
 }
 .main .cont .cardp .cardp-btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--background-primary);
     border-radius: 2rem;
     border: none;
@@ -149,8 +152,8 @@
     box-shadow: inset 1px 1px 1rem var(--opacity);
 }
 .main .cont .cardp .cardp-cont:hover{
-    color: var(--font-secundary);
-    text-shadow: 1px 1px 1rem var(--opacity);
+    color: var(--font-light);
+    transition: all 0.1s;
 }
 .main .cont .cardp .cardp-cont:active {
     transform: scale(1.02);
@@ -164,5 +167,56 @@
 }
 .main .cont .card-add:active{
     transform: scale(1.02);
+    transition: all 0.1s;
+}
+/*Dark Mode*/
+.dark .main .main-filter .searchbar input{
+    background-color: var(--background-dark);
+    border: 1px solid var(--border-dark);
+    border-right: none;
+    transition: all 0.1s;
+    color: var(--background-light);
+}
+.dark .main .main-filter .searchbar .icon{
+    background-color: var(--background-dark);
+    color: var(--border-dark);
+    border: 1px solid var(--border-dark);
+    border-left: none;
+    transition: all 0.1s;
+}
+.dark .main .main-filter .searchbar input:focus {
+    border: 2px solid var(--font-light);
+    border-right: none;
+    outline: none;
+    transition: all 0.1s;
+}
+.dark .main .main-filter .searchbar input:focus + .icon {
+    border: 2px solid var(--font-light);
+    color: var(--font-light);
+    border-left: none;
+    outline: none;
+    transition: all 0.1s;
+}
+.dark .main .main-filter .filter .check .checkbox-label {
+    background-color: var(--background-primary-dark);
+    color: var(--font-light);
+    transition: all 0.1s;
+}
+.dark .main .main-filter .filter .check .checkbox-label.active{
+    background-color: var(--font-light);
+    color: var(--background-primary);
+    transition: all 0.1s;
+}
+.dark .main .cont .cardp .cardp-cont{
+    text-decoration: none;
+    color: var(--background-light);
+    transition: all 0.1s;
+}
+.dark .main .cont .cardp .cardp-img .add{
+    height: 270px;
+    box-shadow: inset 1px 1px 1rem var(--opacity);
+}
+.dark .main .cont .cardp .cardp-cont:hover{
+    color: var(--font-light);
     transition: all 0.1s;
 }

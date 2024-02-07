@@ -1,19 +1,22 @@
 :root{
   --background-primary: #231942;
-  --font-primary: #5E548E;
-  --background-secundary: #9F86C0;
-  --font-secundary: #BE95C4;
   --font-light: #E0B1CB;
-  --font-opacity: #505050;
   --opacity: #000000c0;
   --opacity-border: #a0a0a0;
-}
+  --background-light: #f8f8f8;
 
+  --border-dark: #333333;
+  --background-primary-dark: #23194288;
+  --background-dark: #121212;
+}
 .App{
+  background-color: var(--background-light);
+  color: var(--background-dark);
   font-family: "Ubuntu", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  transition: all 0.1s;
 }
 .App .body{
   flex: 1;
@@ -27,4 +30,17 @@
   margin: auto 0 0 0;
   color: var(--font-light);
   font-weight: 700;
+}
+/*Dark Mode*/
+.dark{
+  background-color: var(--background-dark);
+  transition: all 0.1s;
+}
+.dark .body{
+  color: var(--background-light);
+  transition: all 0.1s;
+}
+.dark .footer{
+  background-color: var(--background-primary-dark);
+  transition: all 0.1s;
 }

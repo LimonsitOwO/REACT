@@ -34,3 +34,17 @@
     color: var(--background-primary);
     background-color: var(--font-light);
 }
+/*Dark Mode*/
+.dark .main .cont h1,.dark .main .cont h3,.dark .main .cont h4{
+    color: var(--font-light);
+}
+.dark .main .cont .back{
+    color: var(--font-light);
+    background-color: var(--background-primary-dark);
+    transition: all 0.1s;
+}
+.dark .main .cont .back:active{
+    color: var(--background-primary);
+    background-color: var(--font-light);
+    transition: all 0.1s;
+}

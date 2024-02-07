@@ -4,6 +4,7 @@
 }
 .cont-footer .icon{
     cursor: pointer;
+    color: var(--font-light);
 }
 .cont-footer .icon:hover{
     transform: scale(1.1);

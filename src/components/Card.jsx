@@ -13,9 +13,8 @@ const URI = 'https://vd-node.vercel.app/peliculas/'
 const Card = () => {
     const [peliculas, setPelicula] = useState([])
     const [search, setSearch] = useState("")
-    const [selectedGeneros, setSelectedGeneros] = useState([]);
-    const [allGeneros, setAllGeneros] = useState([]);
-    
+    const [selectedGeneros, setSelectedGeneros] = useState([])
+    const [allGeneros, setAllGeneros] = useState([])
 
     useEffect(() => {
         getPeliculas();
@@ -72,7 +71,7 @@ const Card = () => {
               <div className='searchbar'>
                 <input type="text" placeholder='Buscar' id='search' value={search} onChange={searcher} />
                 <label className='icon' for='search'>
-                    <FaSearch style={{ fill: 'var(--font-primary)' }}/>
+                    <FaSearch/>
                 </label>
               </div>
               <div className='filter'>

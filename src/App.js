@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Nav } from './components/Nav.jsx';
 import { Card } from './components/Card.jsx';
@@ -6,6 +7,8 @@ import { CreateCard } from './components/Create.jsx';
 import { EditCard } from './components/Edit.jsx';
 import { InfoPage } from './components/Info.jsx';
 import { Footer } from './components/Footer.jsx';
+
+
 
 const Home = () => {
   return( 
@@ -40,9 +43,14 @@ const Info= () => {
 }
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(dark => !dark);
+  };
   return (
-    <div className="App">
-      <Nav />
+    <div className={`App ${darkMode ? 'dark' : ''}`}>
+      <Nav toggleDarkMode={toggleDarkMode} />
       <div className='body'>
         <Routes >
           <Route path='/' element={<Home />} />
