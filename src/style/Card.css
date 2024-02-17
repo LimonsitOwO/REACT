@@ -213,13 +213,20 @@
 }
 .dark .main .main-filter .filter .check .checkbox-label.active{
     background-color: var(--font-light);
-    color: var(--background-primary);
+    color: var(--background-primary-dark);
     transition: all 0.1s;
 }
 .dark .main .cont .cardp .cardp-cont{
     text-decoration: none;
     color: var(--background-light);
     transition: all 0.1s;
+}
+.dark .main .cont .cardp .cardp-btn{
+    background-color: var(--background-primary-dark);
+}
+.dark .main .cont .cardp .cardp-btn:active{
+    background-color: var(--font-light);
+    color: var(--background-primary-dark);
 }
 .dark .main .cont .cardp .cardp-img .add{
     height: 270px;

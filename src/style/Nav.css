@@ -46,6 +46,7 @@ header .colormode{
   align-items: center;
   text-align: center;
   box-shadow: 0 0 5rem var(--opacity);
+  cursor: pointer;
 }
 
 /*Dark Mode*/
@@ -55,6 +56,6 @@ header .colormode{
 }
 .dark header .colormode{
   background-color: var(--font-light);
-  color: var(--background-primary);
+  color: var(--background-primary-dark);
   transition: all 0.1s;
 }
